@@ -11,10 +11,6 @@
 
 require_once __DIR__ . '/autoload.php';
 
-add_action('widgets_init', function()
-{
-    register_widget('Sneek\Widgets\Twitter');
-});
-
+new Sneek\Widgets\Manager;
 
 new Sneek\Admin\Settings\Social;
